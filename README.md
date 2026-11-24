@@ -16,7 +16,19 @@ AnonMeta is a lightweight Python CLI tool built for Penetration Testers, Bug Bou
     chmod +x anonmeta.py
     sudo cp anonmeta.py /usr/local/bin/anonmeta
 
-## Usage
-- Deep wipe a single file: anonmeta report.pdf
-- Deep wipe & spoof: anonmeta report.pdf -s
-- Recursive directory clean: anonmeta ./PoC_Folder -r -s
+## How to Use
+
+    # 1. Clean a single file (deep wipe only)
+    anonmeta report.pdf
+
+    # 2. Clean a single file + spoof neutral metadata (-s)
+    anonmeta screenshot.png -s
+
+    # 3. Clean an entire directory recursively (-r)
+    anonmeta ./PoC_Folder -r
+
+    # 4. Clean & spoof an entire directory (-r -s)
+    anonmeta ./PoC_Folder -r -s
+
+    # 5. Show help menu
+    anonmeta -h
